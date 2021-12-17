@@ -13,4 +13,6 @@ jobs:
         uses: jhnstn/push-after-run@v0.3
         with:
           message: "testing..."
-          run_command: echo "Barf!"
+          run_command: |
+            echo "Barf!"
+            echo "BARF!"
