@@ -1,0 +1,16 @@
+name: test-push-after-run
+on: pull_request
+jobs:
+  test-change:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: "${{ github.event.pull_request.head.ref }}"
+
+      - name: Testing
+        uses: jhnstn/push-after-run@v1.1
+        with:
+          message: "testing..."
+        run: echo "WTF"
