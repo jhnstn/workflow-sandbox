@@ -13,4 +13,4 @@ jobs:
         uses: jhnstn/push-after-run@v1.1
         with:
           message: "testing..."
-        run: echo "WTF"
+          run_command: echo "Barf!"
