@@ -10,7 +10,7 @@ jobs:
           ref: "${{ github.event.pull_request.head.ref }}"
 
       - name: Testing
-        uses: jhnstn/push-after-run@v1
+        uses: jhnstn/push-after-run@v1.3
         with:
           message: "testing..."
           run_command: echo "Barf!"
