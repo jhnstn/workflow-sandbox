@@ -14,3 +14,10 @@ jobs:
             touch foobar.txt
             echo "Barf!"
             echo "BARF!" >> README.md
+      - name: Testing 2
+        run: echo "Barf 2!" >> README.md
+
+      - name: Testing 3
+        uses: jhnstn/push-after-run@v0.1
+        with:
+          message: "testing 3..."
