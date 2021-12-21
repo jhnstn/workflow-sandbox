@@ -11,5 +11,6 @@ jobs:
         with:
           message: "testing..."
           run: |
+            touch foobar.txt
             echo "Barf!"
             echo "BARF!" >> README.md
