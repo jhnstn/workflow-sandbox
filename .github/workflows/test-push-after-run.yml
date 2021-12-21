@@ -6,11 +6,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: "${{ github.event.pull_request.head.ref }}"
-
       - name: Testing
-        uses: jhnstn/push-after-run@v0.5
+        uses: jhnstn/push-after-run@v0.1
         with:
           message: "testing..."
           run: |
